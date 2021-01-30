@@ -7,12 +7,21 @@ namespace game
 {
 	class Board
 	{
-		int board[9];
+		
+		
 		public:
 			void update();
-			void initializeBoard();
+			void initalizeBoard();
+			void headerTest();
+			void printBoard();
+			int getBoardSize();
+			Board()
+			{
+				this->initalizeBoard();
+			}
 		private:
-		
+			int board[9];
+			int boardSize;
 	};
 }
 
