@@ -7,9 +7,7 @@ using namespace std;
 6|7|8
 
 3x3 matrix
-
 */
-
 
 //initalize the board; 
 int board[9] =

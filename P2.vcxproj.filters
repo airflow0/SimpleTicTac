@@ -13,10 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\TicTacFiles">
+      <UniqueIdentifier>{bd7e9371-35e0-487b-a4f7-ee380b4ff82e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\TicTacHeaderFIles">
+      <UniqueIdentifier>{2ad673ea-8fc1-49ea-ae4e-0161e0bbee56}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\TicTacFiles</Filter>
     </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files\TicTacFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\TicTacFiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Board.h">
+      <Filter>Resource Files\TicTacHeaderFIles</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Resource Files\TicTacHeaderFIles</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
