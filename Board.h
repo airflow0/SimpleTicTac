@@ -3,18 +3,18 @@
 #define BOARD_H
 
 
-namespace game
+namespace b
 {
 	class Board
 	{
 		
 		
 		public:
-			void update();
+			void update(int location, int value);
 			void initalizeBoard();
-			void headerTest();
 			void printBoard();
 			int getBoardSize();
+
 			Board()
 			{
 				this->initalizeBoard();

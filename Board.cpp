@@ -1,45 +1,43 @@
 #include "Board.h"
 #include <iostream>
 
-using namespace game;
+using namespace b;
 
 
-void Board::headerTest()
-{
-	std::cout << "Test" << std::endl;
-}
+
 void Board::initalizeBoard()
 {
 	for (int i = 0; i < 9; i++)
 	{
 		board[i] = -1;
 	}
-	boardSize = sizeof(board) / sizeof(*board);
+	this->boardSize = sizeof(board) / sizeof(*board);
 }
-void Board::update()
+void Board::update(int loc, int value)
 {
-	//check if board is intialized
-	if (board == nullptr)
+	if (loc < 9)
 	{
-		std::cout << "Board is not initalized" << std::endl;
-		std::cout << "Initializing Board" << std::endl;
-		initalizeBoard();
+		board[loc] = value;
 	}
-	//Update board based on move
-	else {
-
+	else
+	{
+		//LOC error
 	}
 
 }
-
 int Board::getBoardSize()
 {
 	return boardSize;
 }
+
+
+
 /*
 0|1|2|
 3|4|5|		
 6|7|8|
+
+NOTE::None nested printing? For better performance? Figure out testing method for program execution based on nested for loop vs. Single while loop
 */
 void Board::printBoard()
 {
@@ -48,12 +46,12 @@ void Board::printBoard()
 	{
 		if (temp % 3 == 0)
 		{
-			std::cout << board[temp - 1];
+			std::cout << board[temp - 1] << " ";
 			std::cout << std::endl;
 		}
 		else
 		{
-			std::cout << board[temp - 1];
+			std::cout << board[temp - 1] << " ";
 		}
 		temp++;
 	}
