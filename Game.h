@@ -9,6 +9,7 @@ namespace game
 	public:
 		void setStatus();
 		bool checkStatus();
+		void createNewPlayer();
 	private:
 		bool status;
 		short turn; 

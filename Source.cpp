@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Board.h"
 #include "Player.h"
+#include "PlayerFileSystem.h"
+
 using namespace std;
 
 
@@ -30,8 +32,15 @@ void testPlayer()
 {
 
 }
+void testFileSystem()
+{
+	file::PlayerFileSystem* fs = new file::PlayerFileSystem();
+	
+
+
+}
 int main()
 {
-	
+	testFileSystem();
 	return 0;
 }
