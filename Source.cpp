@@ -1,12 +1,13 @@
 #include <iostream>
 #include "Board.h"
+#include "Player.h"
 using namespace std;
 
 
-int main()
-{
-	game::Board myGameBoard;
 
+void testGameBoard()
+{
+	b::Board myGameBoard;
 	while (true)
 	{
 		myGameBoard.printBoard();
@@ -24,5 +25,13 @@ int main()
 		if (gamestatus == 'f')
 			break;
 	}
+}
+void testPlayer()
+{
+
+}
+int main()
+{
+	
 	return 0;
 }

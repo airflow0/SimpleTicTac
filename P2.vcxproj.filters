@@ -16,7 +16,7 @@
     <Filter Include="Source Files\TicTacFiles">
       <UniqueIdentifier>{bd7e9371-35e0-487b-a4f7-ee380b4ff82e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\TicTacHeaderFIles">
+    <Filter Include="Header Files\TicTacHeaderFIles">
       <UniqueIdentifier>{2ad673ea-8fc1-49ea-ae4e-0161e0bbee56}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -36,13 +36,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h">
-      <Filter>Resource Files\TicTacHeaderFIles</Filter>
+      <Filter>Header Files\TicTacHeaderFIles</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
-      <Filter>Resource Files\TicTacHeaderFIles</Filter>
+      <Filter>Header Files\TicTacHeaderFIles</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
-      <Filter>Resource Files\TicTacHeaderFIles</Filter>
+      <Filter>Header Files\TicTacHeaderFIles</Filter>
+    </ClInclude>
+    <ClInclude Include="single_include\nlohmann\json.hpp">
+      <Filter>Header Files\TicTacHeaderFIles</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -18,6 +18,7 @@ namespace player
 		void increaseMoves();
 		void load();
 		
+		
 		Player(std::string name)
 		{
 			this->name = name;
@@ -28,7 +29,7 @@ namespace player
 	private:
 		std::string name;
 		int wins, lose, moves;
-
+		inline bool exists(const std::string& file);
 	};
 }
 
